@@ -5,7 +5,8 @@ from pathlib import Path
 from typing import Optional
 from urllib.parse import urljoin
 
-from pydantic import BaseSettings
+#from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 import os
 
 import requests
