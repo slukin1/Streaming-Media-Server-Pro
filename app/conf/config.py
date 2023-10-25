@@ -50,9 +50,8 @@ class Config(BaseSettings):
         "email": "239144498@qq.com",
     }
 
-    ORIGINS: Optional[str] = [
-        "*"
-    ]
+    # ORIGINS: Optional[str] = ["*"]
+    ORIGINS: Optional[str] = "*"
 
     ROOT: Optional[str] = Path(__file__).parent.parent  # .app
 
