@@ -44,7 +44,7 @@ class Config(BaseSettings):
 
     VERSION: Optional[str] = "2.6"
 
-    CONTACT: Optional[Dict[str, Any]] = {
+    CONTACT: Optional[dict[str, Any]] = {
         "name": "Naihe",
         "url": "https://github.com/239144498/",
         "email": "239144498@qq.com",
