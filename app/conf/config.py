@@ -42,25 +42,25 @@ class Config(BaseSettings):
 - **向下滑动查看**
 """
 
-    VERSION = "2.6"
+    VERSION: Optional[str] = "2.6"
 
-    CONTACT = {
+    CONTACT: Optional[str] = {
         "name": "Naihe",
         "url": "https://github.com/239144498/",
         "email": "239144498@qq.com",
     }
 
-    ORIGINS = [
+    ORIGINS: Optional[str] = [
         "*"
     ]
 
-    ROOT = Path(__file__).parent.parent  # .app
+    ROOT: Optional[str] = Path(__file__).parent.parent  # .app
 
-    LOG_DIR = ROOT / "log"
+    LOG_DIR: Optional[str] = ROOT / "log"
 
-    datadir = ROOT / 'vtemp'
+    datadir: Optional[str] = ROOT / 'vtemp'
 
-    count = 0
+    count: Optional[str] = 0
 
     url_regex = r"(http|https)://((?:[\w-]+\.)+[a-z0-9]+)((?:\/[^/?#]*)+)?(\?[^#]+)?(#.+)?"
 
