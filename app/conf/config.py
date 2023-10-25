@@ -62,7 +62,7 @@ class Config(BaseSettings):
 
     count: Optional[str] = 0
 
-    url_regex = r"(http|https)://((?:[\w-]+\.)+[a-z0-9]+)((?:\/[^/?#]*)+)?(\?[^#]+)?(#.+)?"
+    url_regex: Optional[str] = r"(http|https)://((?:[\w-]+\.)+[a-z0-9]+)((?:\/[^/?#]*)+)?(\?[^#]+)?(#.+)?"
 
 
 logger.info("配置加载中...")
